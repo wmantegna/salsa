@@ -21,8 +21,11 @@ module Salsa
       end
       
       if Rails.env.production?
+        config.serve_static_assets = true
         config.assets.initialize_on_precompile = false
       end
+
+
     end
 
     # Settings in config/environments/* take precedence over those specified here.
